@@ -1,0 +1,37 @@
+{
+  "name": "droppa_shopify_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "12.13.0",
+    "git": "2.30.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "start:server": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cookie": "^0.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "hmac-validator": "^0.1.0",
+    "mongoose": "^5.10.12",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "nonce": "^1.0.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "serve-favicon": "^2.5.0",
+    "shopify-api-node": "^3.6.1",
+    "shopify-token": "^4.0.0"
+  }
+}

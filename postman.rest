@@ -1,0 +1,47 @@
+GET https://droppergroup.co.za/droppa/services/parties/suburb/0001
+Content-Type: application/json
+###
+DELETE https://droppadevtest.myshopify.com/admin/api/2021-07/orders/3949461504192.json
+Content-Type: application/json
+X-Shopify-Access-Token: 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
+scope: read_shipping,write_shipping,write_products,read_products,read_locations,read_fulfillments,write_fulfillments
+
+### carrier services
+GET https://droppadevtest.myshopify.com/admin/api/2021-07/carrier_services.json
+Content-Type: application/json
+X-Shopify-Access-Token: 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
+
+### redirect
+GET https://droppadevtest.myshopify.com/admin/api/2021-07/redirects.json
+Content-Type: application/json
+X-Shopify-Access-Token: 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
+scope: read_content
+
+### locations
+GET https://droppadevtest.myshopify.com/admin/api/2021-07/locations.json
+Content-Type: application/json
+X-Shopify-Access-Token: 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
+
+
+### locations
+GET https://droppadevtest.myshopify.com/admin/api/2021-07/orders.json?status=any 
+Content-Type: application/json
+scope: read_shipping,write_orders,read_orders,write_shipping,write_products,read_products,read_locations,read_fulfillments,write_fulfillments
+X-Shopify-Access-Token: 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
+
+###
+POST https://droppergroup.co.za/droppa/services/plugins/fixed/rates
+Content-Type: application/json
+Authorization: Bearer 8c4e9434-f012-4741-a703-f9f8987abd5c:60f526f82114cc0075525ea6
+
+{
+    "mass": 4,
+    "dimensions": [
+        {
+            "parcel_length": null,
+            "parcel_breadth": null,
+            "parcel_height": null,
+            "parcel_mass": 4
+        }
+    ]
+}

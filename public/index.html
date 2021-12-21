@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="sameorigin">
+    <title>Thank You Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script>
+        let count = 3;
+        var interval = setInterval(function () {
+
+            console.log(count);
+            count--;
+            if (count < 0) {
+                clearInterval(interval);
+            }
+
+        }, 1000)
+
+
+        // let timeoutHandle = () => {
+        //     console.log('Log count', count--);
+        //     // window.location.replace("https://<%= shop %>/admin/apps/droppa");
+        //     // window.clearInterval(timeoutHandle);
+        // }
+
+        // setTimeout(timeoutHandle, 1000);
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="../public/image/02.jpg" class="d-block mx-lg-auto img-fluid" alt="Droppa Shipping Image"
+                    loading="lazy" width="700" height="500">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Thank you for donwloading the Droppa Shipping App.</h1>
+                <p class="lead">
+                    In order to activate the Droppa Shipping App, you will have to provide us with your API and Service
+                    keys generated
+                    from the Droppa Group through our <a href="mailto:itsupport@droppa.co.za">support team</a>.
+                    Once those keys are enterd, you can navigate to your online store and start making purchases, you
+                    will notice a courier method listed Droppa Shipping with an amount to it, you'll have to select it
+                    and continue with the order until payment in order to create a booking with the Droppa Group
+                    company.
+                </p>
+                <p class="lead">Please click on the <b>Settings</b> link to capture your API keys.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
